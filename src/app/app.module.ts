@@ -18,6 +18,7 @@ import { CustomcompComponent } from './customcomp/customcomp.component';
 import { CustomcompSiblingComponent } from './customcomp-sibling/customcomp-sibling.component';
 import { CustomcompchildComponent } from './customcompchild/customcompchild.component';
 import { CustompipePipe } from './custompipe.pipe';
+import { CustomcompSibling1Component } from './customcomp-sibling1/customcomp-sibling1.component';
 
 @NgModule({
   imports: [
@@ -43,7 +44,8 @@ import { CustompipePipe } from './custompipe.pipe';
     CustomcompComponent,
     CustomcompSiblingComponent,
     CustomcompchildComponent,
-    CustompipePipe
+    CustompipePipe,
+    CustomcompSibling1Component
   ],
   bootstrap: [ AppComponent ]
 })
