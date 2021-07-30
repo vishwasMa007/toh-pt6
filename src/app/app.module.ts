@@ -14,6 +14,10 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { MessagesComponent } from './messages/messages.component';
+import { CustomcompComponent } from './customcomp/customcomp.component';
+import { CustomcompSiblingComponent } from './customcomp-sibling/customcomp-sibling.component';
+import { CustomcompchildComponent } from './customcompchild/customcompchild.component';
+import { CustompipePipe } from './custompipe.pipe';
 
 @NgModule({
   imports: [
@@ -35,7 +39,11 @@ import { MessagesComponent } from './messages/messages.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    CustomcompComponent,
+    CustomcompSiblingComponent,
+    CustomcompchildComponent,
+    CustompipePipe
   ],
   bootstrap: [ AppComponent ]
 })
