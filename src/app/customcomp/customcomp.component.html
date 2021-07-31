@@ -1,23 +1,28 @@
 <p>customcomp works!</p>
 <div class="template">
-    <!-- <input type=text  [(ngModel)]="name"/> -->
+       <!-- <input type=text  [(ngModel)]="name"/> -->
 
-    <input type=text  #value/> 
-    <!-- <input type="checkbox" [(ngModel)]="cChexBox" value="HTML1chexbox"/>
+       <input type="text" #value />
+       <label>Search here</label>
+       <input
+              #searchBox
+              type="text"
+              id="search-box"
+              (input)="search(searchBox.value)"
+       />
+       <!-- <input type="checkbox" [(ngModel)]="cChexBox" value="HTML1chexbox"/>
     <label for="html">HTML1</label><br>
     <input type="radio" name="radioc" [(ngModel)]="cradio" value="HTML1"/>
     <label for="html">HTML2</label><br>
     <input type="radio" name="radioc" [(ngModel)]="cradio" value="HTML2"/>
     <label for="html">HTML3</label><br>
     <input type="radio" name="radioc" [(ngModel)]="cradio" value="HTML3"/> -->
-    <button (click)="manipulateName()">
-      add
-    </button>
-    <div>
-      {{displayName | custompipe : 'hello' : 'bro'}}
-    </div>
+       <button (click)="manipulateName()">add</button>
+       <div>
+              {{ displayName | custompipe: 'hello':'bro' }}
+       </div>
 
-    <!-- <form (ngSubmit)="onSubmit($event)">
+       <!-- <form (ngSubmit)="onSubmit($event)">
         <input type="text" name="textName"/>
         <button class="button" type="submit">add</button>
         <div>
@@ -25,5 +30,5 @@
           </div>
     </form> -->
 
-    <app-customcompchild></app-customcompchild>
+       <app-customcompchild></app-customcompchild>
 </div>

@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core'
+
 import { CustommanipulateserviceService } from '../custommanipulateservice.service'
 
 @Component({
@@ -37,6 +38,10 @@ export class CustomcompComponent implements OnInit {
               this.displayName = this.value1.nativeElement.value
               //this.custommanipulateserviceService.sendData(this.value1.nativeElement.value);
 
-              // this.custommanipulateserviceService.returnGet()
+              //this.custommanipulateserviceService.returnGet()
+       }
+
+       search(term: string): void {
+              console.log('searched value', term)
        }
 }
